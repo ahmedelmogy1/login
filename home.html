@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-4 text-decoration-none text-white" href="./home.html">SMART LOGIN</a>
+          <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-main">
+              <li class="nav-item nav-main">
+                <button class=" px-5 logOut  btn btn-outline-warning " >Logout</button>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="vh-100">
+        
+        <div class="text-white d-flex justify-content-center mt-5  pt-5 home ">
+          <div class="form bg-dark z-2">
+            <h1 class="m-5 welcome ">WELCOME <span class="nameHome"></span></h1>
+          </div>
+        </div>
+      </section>
+      <script>if(JSON.parse(localStorage.getItem("logedUser"))===false){
+       window.location.href="./index.html"
+      }
+      </script>
+      <script src="./js/home.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form class="w-50 p-5 d-flex justify-content-center align-items-center flex-column text-white border mx-auto mt-5 gap-4 form ">
+        <h1>Smart Login System</h1>
+        <input type="text" class="form-control nameSignUp" placeholder="Enter Your Name">
+        <span class="errorName d-none text-danger">Minimum number of letters 3 </span>
+        <input type="email" class="form-control emailSignUp"  placeholder="Enter Your email">
+        <span class="errorEmail d-none text-danger">Enter email </span>
+        <input type="password" class="form-control passwordSignUp"  placeholder="Enter Your password">
+        <span class="errorPassword d-none text-danger">Must contain uppercase and lowercase letters, numbers and symbols such as @ #</span>
+        <span class="d-none text-danger errorM">email already exists</span>
+        <button class="btn btn-outline-light w-100 btnSignUp" type="button">Sign Up</button>
+        <div class="fw-medium">You have an account?  <a href="./index.html">Sign In</a></div>
+    </form>
+    <script src="./js/scriptSignUp.js"></script>
+</body>
+</html>
