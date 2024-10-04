@@ -6,11 +6,11 @@ let emails=JSON.parse(localStorage.getItem("emails"))
 //^ Event
 logOut.addEventListener("click",()=>{
    nameHome.innerHTML=emails[emails.length-1].userName
-    window.open("../index.html","_self")
+    location.href="../index.html";
 })
 
 
-if(window.location.pathname ==="/home.html"){
+if(window.location.pathname ==="/pageHome.html"){
     nameHome.innerHTML=emails[emails.length-1].userName
 }
 

@@ -64,7 +64,7 @@ btnSignIn.addEventListener("click", function () {
         emailSignIn.value === emails[i].userEmail &&
         passwordSignIn.value === emails[i].userPassword
       ) {
-        window.open("./login/home.html","_self")
+        location.href="../pageHome.html";
         localStorage.setItem("logedUser", true);
         emailSignIn.classList.remove("is-invalid");
         passwordSignIn.classList.remove("is-invalid");
